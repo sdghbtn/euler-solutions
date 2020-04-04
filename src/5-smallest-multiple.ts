@@ -1,5 +1,5 @@
-const buildArray = l => Array.from(Array(l), (x, i) => i + 1)
-const areMultiples = a => c => a.every(n => c % n === 0)
+const buildArray = (l: number) => Array.from(Array(l), (x, i) => i + 1)
+const areMultiples = (a: number[]) => (c: number) => a.every(n => c % n === 0)
 
 const TEST_NUMBER = 2520
 const TEST_LIST = buildArray(10)
@@ -12,8 +12,10 @@ let done = false
 let curNum = 1
 let foundNum
 
-while (!done) {
-  if (isMultipleOfFinalList(curNum)) {
+while (!done)
+{
+  if (isMultipleOfFinalList(curNum))
+  {
     foundNum = curNum
     done = true
   }
