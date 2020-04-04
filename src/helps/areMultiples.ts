@@ -1,0 +1,1 @@
+export const areMultiples = (a: number[]) => (c: number) => a.every(n => c % n === 0)
