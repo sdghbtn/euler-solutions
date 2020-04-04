@@ -1,0 +1,1 @@
+export const takeLast = (n: number) => (a: any[]) => a.slice(a.length - n)
