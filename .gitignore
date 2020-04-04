@@ -106,3 +106,5 @@ dist
 .history/
 .ionide/
 pnpm-lock.yaml
+
+built/
