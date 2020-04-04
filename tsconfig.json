@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["es5", "es6", "dom"],
+    "outDir": "./built",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "newLine": "lf",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "removeComments": true
+  },
+  "include": ["./src/**/*"]
+}
