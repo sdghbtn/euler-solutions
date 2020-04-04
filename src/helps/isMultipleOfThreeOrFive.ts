@@ -1,0 +1,1 @@
+export const isMultipleOfThreeOrFive = (n: number) => n % 3 === 0 || n % 5 === 0;
