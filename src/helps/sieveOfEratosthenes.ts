@@ -1,5 +1,3 @@
-import { buildArray } from '../helps/buildArray'
-
 export const sieveOfEratosthenes = (x: number) =>
 {
     const isPrime = new Array(x + 1).fill(true)
