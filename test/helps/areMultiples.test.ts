@@ -9,6 +9,6 @@ describe('areMultiples', () =>
 {
     it('should return true when all numbers in a given array are multiples of a given number', () =>
     {
-        expect(areMultiples(TEST_LIST)(TEST_NUMBER)).eq(true)
+        expect(areMultiples(TEST_LIST)(TEST_NUMBER)).true
     })
 })

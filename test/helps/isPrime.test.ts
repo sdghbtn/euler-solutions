@@ -10,11 +10,11 @@ describe('isPrime', () =>
 {
     it('should return true for prime numbers', () =>
     {
-        expect(PRIMES.every(isPrime)).eq(true)
+        expect(PRIMES.every(isPrime)).true
     })
 
     it('should return false for non-prime numbers', () =>
     {
-        expect(NOT_PRIMES.every(n => !isPrime(n))).eq(true)
+        expect(NOT_PRIMES.every(n => !isPrime(n))).true
     })
 })

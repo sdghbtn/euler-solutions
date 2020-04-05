@@ -9,10 +9,10 @@ describe('isEven', () =>
 {
     it('should return true for even numbers', () =>
     {
-        expect(EVEN_NUMBERS.every(isEven)).eq(true)
+        expect(EVEN_NUMBERS.every(isEven)).true
     })
     it('should return false for odd numbers', () =>
     {
-        expect(ODD_NUMBERS.every(n => !isEven(n))).eq(true)
+        expect(ODD_NUMBERS.every(n => !isEven(n))).true
     })
 })
