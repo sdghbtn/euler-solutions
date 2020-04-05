@@ -8,7 +8,8 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "gen": "ts-node ./util/problem-gen/genProblem.ts",
+    "genp": "ts-node ./util/problem-gen/genProblem.ts",
+    "genh": "ts-node ./util/help-gen/genHelp.ts",
     "solve": "ts-node ./util/problem-solve/solveProblem.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
