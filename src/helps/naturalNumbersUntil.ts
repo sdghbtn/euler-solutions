@@ -1,0 +1,1 @@
+export const naturalNumbersUntil = (l: number) => Array.from(Array(l), (x, i) => i + 1)

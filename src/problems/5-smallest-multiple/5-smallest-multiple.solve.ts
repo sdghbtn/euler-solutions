@@ -1,5 +1,5 @@
 import { measure } from '../../measure.solve'
-import { buildArray } from '../../helps/buildArray'
+import { naturalNumbersUntil } from '../../helps/naturalNumbersUntil'
 import { smallestMultiple } from './5-smallest-multiple'
 
-measure(smallestMultiple)(buildArray(20))
+measure(smallestMultiple)(naturalNumbersUntil(20))

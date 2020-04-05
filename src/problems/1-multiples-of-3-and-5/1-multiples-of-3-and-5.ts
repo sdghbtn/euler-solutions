@@ -1,6 +1,6 @@
 import { isMultipleOfThreeOrFive } from '../../helps/isMultipleOfThreeOrFive'
-import { buildArray } from '../../helps/buildArray'
+import { naturalNumbersUntil } from '../../helps/naturalNumbersUntil'
 
 export const sumOfMultiples = (n: number) =>
-    buildArray(n - 1)
+    naturalNumbersUntil(n - 1)
         .reduce((a, v) => isMultipleOfThreeOrFive(v) ? a + v : a, 0)
