@@ -19,8 +19,8 @@ describe('areFactors', () => {
     })
 
     it('should return false when an array of numbers are not factors of a given number', () => {
-        expect(areFactorsOfTwelve([1, 2])).eq(false)
-        expect(areFactorsOfThirteen([1, 2])).eq(false)
-        expect(areFactorsOfFifteen([1, 2])).eq(false)
+        expect(areFactorsOfTwelve([1, 2])).false
+        expect(areFactorsOfThirteen([1, 2])).false
+        expect(areFactorsOfFifteen([1, 2])).false
     })
 })

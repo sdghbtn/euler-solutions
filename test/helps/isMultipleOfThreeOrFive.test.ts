@@ -19,8 +19,8 @@ describe('isMultipleOfThreeOrFive', () =>
 
     it('returns false when a given number is not a multiple of 3 or 5', () =>
     {
-        expect(isMultipleOfThreeOrFive(2)).eq(false)
-        expect(isMultipleOfThreeOrFive(11)).eq(false)
-        expect(isMultipleOfThreeOrFive(14)).eq(false)
+        expect(isMultipleOfThreeOrFive(2)).false
+        expect(isMultipleOfThreeOrFive(11)).false
+        expect(isMultipleOfThreeOrFive(14)).false
     })
 })
