@@ -9,7 +9,7 @@
   "scripts": {
     "tsc": "tsc",
     "gen": "ts-node ./util/problem-gen/genProblem.ts",
-    "solve": "ts-node",
+    "solve": "ts-node ./util/problem-solve/solveProblem.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
