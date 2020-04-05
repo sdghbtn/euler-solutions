@@ -1,0 +1,1 @@
+export const isFactor = (x: number) => (y: number) => x % y === 0
