@@ -1,0 +1,1 @@
+export const areConsecutive = (x: number) => (y: number[]) => y.length > 1 && y.every((v, i) => v + x === y[i + 1] || i === y.length - 1)
