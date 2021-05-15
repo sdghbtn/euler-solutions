@@ -8,7 +8,7 @@ import (
 func RunSolution() {
     start := time.Now()
 
-    solution = Solve()
+    solution := Solve()
 
     duration := time.Since(start)
 
