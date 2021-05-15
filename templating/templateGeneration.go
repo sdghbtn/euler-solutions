@@ -21,7 +21,7 @@ func GenerateProblemTemplate(problem int) {
 	problemInstructions := getProblemInstructions(problem)
 	instructionTemplateReplacement := genContents("instruction.md", problem)
 	instructionContents := append(instructionTemplateReplacement, problemInstructions[:]...)
-	genFile(instructionContents, destdir, fmt.Sprintf("problem%d.md", problem))
+	genFile(instructionContents, destdir, "README.md")
 }
 
 func GenerateHelpTemplate(helpname string) {
