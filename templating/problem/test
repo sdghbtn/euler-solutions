@@ -1,0 +1,11 @@
+package problem{{problemnumber}}
+
+import "testing"
+
+func TestSolve{{problemnumber}}(t *testing.T) {
+    expected := 
+    actual := Solve()
+    if actual != expected {
+        t.Fatalf("Expected %d; received %d", expected, actual)
+    }
+}

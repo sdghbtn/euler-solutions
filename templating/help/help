@@ -1,0 +1,5 @@
+package helps
+
+func {{helpname}}(x int) int {
+
+}
