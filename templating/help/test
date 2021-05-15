@@ -1,0 +1,11 @@
+package helps
+
+import "testing"
+
+func Test{{helpname}}(t *testing.T) {
+    expected := 
+    actual := {{helpname}}()
+    if actual != expected {
+        t.Fatalf("Expected %d; received %d", expected, actual)
+    }
+}

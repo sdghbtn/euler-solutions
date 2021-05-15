@@ -27,7 +27,8 @@ func GenerateProblemTemplate(problem int) {
 func GenerateHelpTemplate(helpname string) {
 	destdir := getHelpDestDir(helpname)
 
-	genFile(genHelpContents(helpname), destdir, fmt.Sprintf("%s.go", strings.ToLower(helpname)))
+	genFile(genHelpContents(helpname, "help"), destdir, fmt.Sprintf("%s.go", strings.ToLower(helpname)))
+	genFile(genHelpContents(helpname, "test"), destdir, fmt.Sprintf("%s_test.go", strings.ToLower(helpname)))
 }
 
 func getProblemDestDir(problem int) string {
@@ -107,8 +108,8 @@ func getHelpTemplateContents(fname string) ([]byte, error) {
 	return contents, nil
 }
 
-func genHelpContents(helpname string) []byte {
-	contents, err := getHelpTemplateContents("help")
+func genHelpContents(helpname string, fname string) []byte {
+	contents, err := getHelpTemplateContents(fname)
 	if err != nil {
 		panic(err)
 	}
