@@ -8,7 +8,7 @@ I am now solving these problems in Go. The aim here is to write idomatic Go code
 Because my math skills are wanting, my initial solutions will be naive approaches and will be followed up with mathematically appropriate solutions where I am able or learn of better approaches.
 
 ## Generate a Problem Template
-`make gen-problem <problem number>`
+`make gen-problem problem=<problem number>`
 
 Problem templates can be found at `templating/problem`. This command will generate a new template in `problems/problem<problem number>` with:
 - a problem file (for building the necessary function for the problem)
