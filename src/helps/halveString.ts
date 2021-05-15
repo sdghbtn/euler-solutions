@@ -1,1 +1,0 @@
-export const halveString = (s: string) => [s.substr(0, s.length / 2), s.substr(s.length / 2)]

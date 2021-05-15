@@ -1,1 +1,0 @@
-export const product = (a: number[]) => a.reduce((a, v) => a * v)

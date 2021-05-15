@@ -1,1 +1,0 @@
-export const sum = (a: number[]) => a.reduce((a, v) => a + v)
