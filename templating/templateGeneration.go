@@ -119,13 +119,21 @@ func genHelpContents(helpname string, fname string) []byte {
 }
 
 func getProblemInstructions(problem int) []byte {
-	res, err := http.Get(fmt.Sprintf("https://projecteuler.net/minimal=%d", problem))
+	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("https://projecteuler.net/minimal=%d", problem), nil)
 	if err != nil {
 		panic(err)
 	}
+	req.Header.Add("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36")
+
+	res, err := http.DefaultClient.Do(req)
+	if err != nil {
+		panic(err)
+	}
+
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		panic(err)
 	}
+
 	return body
 }
